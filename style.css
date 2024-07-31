@@ -1,0 +1,64 @@
+header{
+    /* font-weight: 500;     */
+    /* background-color:navy; */
+    text-align: center;
+    /* margin-top: -10px; */
+   
+    
+}
+header a {
+    text-decoration: none;
+}
+
+
+h1{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    /* font-size: 48px; */
+}
+
+h2{
+    margin-top: -10px;
+    font-family: "Montserrat", sans-serif;
+}
+
+hr{
+    border-top: 1px solid black;
+}
+
+body{
+
+    border-style: solid;
+    border-width: 16px;
+    border-bottom: none;
+    font-family: "Montserrat", sans-serif;
+
+}
+footer{
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-width: 16px; 
+}
+
+
+.button1 {
+    background-color: black; 
+    color: white; 
+    border: 1px solid black;
+    padding: 5px 16px;
+    text-decoration: none;
+    border-radius: 8px;   
+}
+.buttonp1 {
+    margin-top: 27px;
+    margin-bottom: 25px;
+}
+
+.miniatura-juego{
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+#more {display: none;}
