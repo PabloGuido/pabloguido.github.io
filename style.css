@@ -2,6 +2,7 @@ header{
     /* font-weight: 500;     */
     /* background-color:navy; */
     text-align: center;
+/*    color: #012828;*/
     /* margin-top: -10px; */
    
     
@@ -13,25 +14,34 @@ header a {
 
 h1{
     text-align: center;
-    font-family: "Montserrat", sans-serif;
+/*    font-family: "Montserrat", sans-serif;*/
+    font-family: "Times New Roman", Times, serif;
+/*    color: #012828;*/
     /* font-size: 48px; */
 }
 
 h2{
     margin-top: -10px;
-    font-family: "Montserrat", sans-serif;
+/*    font-family: "Montserrat", sans-serif;*/
+    font-family: "Times New Roman", Times, serif;
+/*    color: #012828;*/
 }
 
 hr{
+/*    border-top: 1px solid #012828;*/
     border-top: 1px solid black;
 }
 
 body{
 
-    border-style: solid;
+    border-style: solid ;
     border-width: 16px;
     border-bottom: none;
-    font-family: "Montserrat", sans-serif;
+/*    font-family: "Montserrat", sans-serif;*/
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px; 
+/*    border-color: #012828; */
+/*    color: #012828;*/
 
 }
 footer{
@@ -40,12 +50,16 @@ footer{
     border-left: none;
     border-right: none;
     border-width: 16px; 
+/*    border-color: #012828; */
 }
 
 
 .button1 {
     background-color: black; 
+/*    background-color: #012828; */
     color: white; 
+    border: 1px solid black;
+/*    border: 1px solid #012828;*/
     border: 1px solid black;
     padding: 5px 16px;
     text-decoration: none;
