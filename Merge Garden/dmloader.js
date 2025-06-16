@@ -395,16 +395,11 @@ var EngineLoader = {
                         }
                     }
                 }
-                const blob = new Blob([response], { type: 'text/javascript' });
-                const blobUrl = URL.createObjectURL(blob);
-
-                Module["mainScriptUrlOrBlob"] = blobUrl;
+                Module["mainScriptUrlOrBlob"] = src;
 
                 const script = document.createElement('script');
-                script.src = blobUrl;
+                script.src = src;
                 script.type = "text/javascript";
-                //TODO: Clean up the blob URL when no need anymore
-                // URL.revokeObjectURL(blobUrl);
                 document.body.appendChild(script);
             },
             function(loadedDelta, currentAttempt){
@@ -887,7 +882,7 @@ var Progress = {
 
 var Module = {
     engineVersion: "1.10.2",
-    engineSdkSha1: "f56fcca509a9fa5350bf55f18d8c6087295a8cef",
+    engineSdkSha1: "7a0e23b3fcab4c5db82f2b32f5d8ac5df9467c9d",
     noInitialRun: true,
 
     _filesToPreload: [],
