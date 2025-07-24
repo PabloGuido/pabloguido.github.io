@@ -1,5 +1,5 @@
 [project]
-title = Merge Garden
+title = The Mighty Butterfly's Merge
 version = 1.0
 write_log = 0
 minimum_log_level = 1
@@ -7,7 +7,7 @@ compress_archive = 1
 publisher = unnamed
 developer = unnamed
 custom_resources = /mapas
-title_as_file_name = MergeGarden
+title_as_file_name = TheMightyButterflysMerge
 
 [display]
 width = 836
@@ -197,7 +197,7 @@ include_dirs =
 shared_state = 1
 
 [label]
-max_count = 64
+max_count = 1024
 subpixels = 1
 
 [profiler]
