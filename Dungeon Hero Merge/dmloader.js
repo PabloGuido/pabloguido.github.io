@@ -72,6 +72,8 @@ var CUSTOM_PARAMETERS = {
         var prevInnerHeight = -1;
         
         
+        buttonHeight = 42;
+        
         // Hack for iOS when exit from Fullscreen mode
         if (is_iOS) {
             window.scrollTo(0, 0);
@@ -215,9 +217,9 @@ var FileLoader = {
 var EngineLoader = {
     arc_sha1: "",
     wasm_sha1: "",
-    wasm_size: 2539777,
+    wasm_size: 3085526,
     wasmjs_sha1: "",
-    wasmjs_size: 278432,
+    wasmjs_size: 288373,
     wasm_pthread_sha1: "",
     wasm_pthread_size: 2000000,
     wasmjs_pthread_sha1: "",
@@ -881,8 +883,8 @@ var Progress = {
 /* ********************************************************************* */
 
 var Module = {
-    engineVersion: "1.10.2",
-    engineSdkSha1: "7a0e23b3fcab4c5db82f2b32f5d8ac5df9467c9d",
+    engineVersion: "1.10.4",
+    engineSdkSha1: "1aafd0a262ff40214ed7f51302d92fa587c607ef",
     noInitialRun: true,
 
     _filesToPreload: [],
@@ -1269,9 +1271,9 @@ Module["locateFile"] = function(path, scriptDirectory)
     // we need to replace it here with the correct project name.
     if (path == "dmengine.wasm" || path == "dmengine_release.wasm" || path == "dmengine_headless.wasm") {
         if (Module['isWASMPthreadSupported']) {
-            path = "TheMightyButterflysMerge_pthread.wasm";
+            path = "DungeonHeroMerge_pthread.wasm";
         } else {
-            path = "TheMightyButterflysMerge.wasm";
+            path = "DungeonHeroMerge.wasm";
         }
     }
     return scriptDirectory + path;

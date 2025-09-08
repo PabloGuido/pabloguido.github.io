@@ -1,5 +1,5 @@
 [project]
-title = The Mighty Butterfly's Merge
+title = Dungeon Hero Merge
 version = 1.0
 write_log = 0
 minimum_log_level = 1
@@ -7,7 +7,7 @@ compress_archive = 1
 publisher = unnamed
 developer = unnamed
 custom_resources = /mapas
-title_as_file_name = TheMightyButterflysMerge
+title_as_file_name = DungeonHeroMerge
 
 [display]
 width = 836
@@ -56,7 +56,7 @@ render = /mi render/my_orthographic.renderc
 
 [graphics]
 default_texture_min_filter = linear
-default_texture_mag_filter = linear
+default_texture_mag_filter = nearest
 max_draw_calls = 2048
 max_characters = 8192
 max_font_batches = 128
@@ -149,7 +149,7 @@ immersive_mode = 0
 display_cutout = 1
 debuggable = 0
 proguard = 
-extract_native_libs = 1
+extract_native_libs = 0
 
 [osx]
 app_icon = 
@@ -173,16 +173,17 @@ archive_location_prefix = archive
 archive_location_suffix = 
 engine_arguments = --verify-graphics-calls=false
 wasm_streaming = 0
-show_fullscreen_button = 0
+show_fullscreen_button = 1
 show_made_with_defold = 0
 show_console_banner = 0
 scale_mode = stretch
 transparent_graphics_context = 0
 
 [particle_fx]
-max_count = 64
-max_emitter_count = 64
-max_particle_count = 1024
+max_count = 512
+max_emitter_count = 1024
+max_particle_count = 2048
+max_particle_buffer_count = 2048
 
 [network]
 http_timeout = 0
@@ -204,6 +205,7 @@ subpixels = 1
 track_cpu = 0
 enabled = true
 sleep_between_server_updates = 0
+performance_timeline_enabled = 0
 
 [liveupdate]
 settings = /liveupdate.settings
@@ -217,5 +219,7 @@ max_tile_count = 2048
 [engine]
 run_while_iconified = 0
 fixed_update_frequency = 60
-max_time_step = 0.5
+max_time_step = 0.033333
+
+[font]
 
